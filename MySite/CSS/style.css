@@ -1,0 +1,285 @@
+/* Copyright 2016 John Austin Moreno All Rights Reserved */
+
+/* --------------------------General setup-------------------------- */
+body {
+    margin:10px 0 10px 0;		/* default line height, margin, font */
+    line-height:23px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color:#333;
+	z-index:1;
+}
+
+#animal {					/* gif stays on page, 0 from bottom and right */
+	position:fixed;
+	right:0;
+	bottom:0;
+	width:40px;
+}
+
+a {
+	text-decoration:none;
+}
+
+a:visited {
+	color:#29B89E;
+}
+
+a:hover {
+	color:red;
+	text-decoration:underline;
+}
+
+.blockquote {
+	width:400px;
+	font-weight:bold;
+	text-align:center;
+	color:#5B5B5B;
+	margin:15px auto;
+}
+
+.auth {
+	font-weight:normal;
+}
+
+/* --------------------------Header ---------------------------*/
+
+.headMain {					/* theme color: 29B89E, centers and borders */
+	background-color:#29B89E;
+	width:70%;
+	margin:auto;
+	text-align:center;	
+	line-height: 2em;
+	
+	border:1px solid;
+	border-radius:65px;
+}
+
+.headMain h1 {
+	padding:0 15px;
+}
+
+/* ----------------------Page Navigation-------------------- */
+
+#pageNav {					
+	padding-top:10px;
+	width:67%;
+	margin:0 auto;			/* center nav bar */
+	text-align:center;
+	
+}
+
+#pageNav  ul{
+	list-style: none;		/* no bullet */ 
+	margin:0;
+	overflow-x:auto;	
+	overflow-y:hidden;
+	background-color:#333;
+	white-space:nowrap;
+}
+
+#pageNav li {
+	padding-top:12px;
+	display:inline-block;
+	height:35px;
+}
+
+#pageNav a {
+	color:white;
+	padding:14px 30px 14px 0;	
+}
+
+#pageNav a:hover {
+	color:blue;
+	font-size:100%;
+	text-decoration:none;
+}
+
+.goHome a {
+	color:#F7FE3D !important;
+}
+
+/* --------------------------Drop-down Menu------------ */
+
+.dropdown {
+	color:white;
+}
+
+.dropdown-content {
+    margin:0;
+	padding:0 0 0 20px;
+	display: none;
+    position: absolute;
+    background-color: #f9f9f9 !important;
+    /* min-width: 100px; */
+    box-shadow: 0px 8px 16px 0px #333333;
+}
+
+.dropdown-content a {
+	color:#333 !important;
+}
+
+.dropdown-content a:hover {
+	color:blue !important;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* --------------------------Disclaimer-------------------------- */
+.disclaim {
+	color:#C4C3BD; 
+	text-align:center;
+	width:50%;
+	margin:10px auto;
+}
+
+/* --------------------------Body text and media-------------------------- */
+
+h2 {						/* section headings */
+	margin-left:15%;
+	background-color:#29B89E;
+	width:200px;
+	text-align:center;
+	border:1px solid;
+	padding:5px;
+	border-radius:15px;
+}
+
+h3 {						/* section headings */
+	margin:0 auto;
+	background-color:#29B89E;
+	width:200px;
+	text-align:center;
+	border:1px solid;
+	padding:5px;
+	border-radius:15px;
+}
+
+h6 {
+	margin-left:15%;
+	margin-top: -15px;
+	width:200px;
+	text-align:center;
+	padding-top:0px;
+}
+
+p {
+	text-align:justify;
+	margin-left:12.5%;
+	margin-right:12.5%;
+}
+
+.expect ul {
+	margin-left:12.5%;
+	margin-right:12.5%;
+}
+
+.mediaDescription {
+	width:75%;
+	text-align:center;
+	margin:0 auto;
+}
+
+.cotton {
+	display:block;
+	margin:0 auto;
+	border:.5px solid;
+	border-radius:100px;
+	width:650px;
+}
+
+iframe {
+	display:block;
+	margin:0 auto;
+}
+
+.life ul {
+	margin-left:12.5%;
+	margin-right:12.5%;
+}
+
+#resume {
+	display:block;
+	width:500px;
+	height:600px;
+	margin:20px auto;
+}
+
+/* -----------------------------Extra------------------------------- */
+#riddle {
+	text-align:center;
+}
+
+#riddle p {
+	text-align:center;
+}
+
+#ridAns {
+	text-align:center;
+}
+
+#ansResponse {
+	text-align:center;
+}
+
+/* --------------------------Back to top button-------------------------- */
+#bt {
+	background-color:#333;
+	position:fixed;
+	bottom:2px;
+	left:2px;
+	width:60px;
+	text-align:center;
+	padding:2px 0;
+	margin:0;
+	opacity: .5;
+	line-height:14px;
+}
+
+#bt a {
+	color:white;
+	font-size:.8em;
+}
+
+#copyright {
+
+	text-align:center;
+	color:#A9A9A3;
+	bottom:30px;
+}
+
+/* --------------------------------------------------------------------------
+-------------------------Change Log---------------------------------------
+-------------------------------------------------------------------------- */
+.changeSum {
+	margin:15px 50px;
+}
+
+.changes {
+	margin:0 auto;
+	width:80%;
+	resize:both;
+	overflow:auto;
+}
+
+table {
+    border-collapse:collapse;
+	width:100%;
+	white-space:nowrap;
+}
+
+tr:nth-child(even) {
+	background-color:#f2f2f2;
+}
+
+th {
+	background-color:#29B89E;
+    border: 1px solid black;
+	height:40px;
+}
+
+td {
+	padding:4px 0 4px 30px;
+	border-bottom:1px solid #ddd;
+}
