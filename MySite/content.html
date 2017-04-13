@@ -1,0 +1,184 @@
+<!-- Copyright 2017 John Austin Moreno All Rights Reserved -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html: charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A journey of a thousand miles begins with a single step." />
+
+    <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+
+    <title>All the Things</title>
+</head>
+<body>
+<div class="container">
+
+    <div id="bt">
+        <a href="#top">Back to Top</a>
+    </div>
+
+    <img id="animal" src="images/thmonkey.gif"/>
+
+    <a name="top"></a>
+
+    <div class="headMain">
+        <h1>This is the Content Page</h1>
+    </div>
+
+    <div id="pageNav">
+
+        <ul>
+
+            <li><a href="#purpose">Purpose</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#workout">I work out</a></li>
+            <li><a href="#expect">What to Expect</a></li>
+            <li><a href="#media">Pics and Such</a></li>
+            <li><a href="#life">Life</a></li>
+            <li class="goHome"><a href="changelog.html">Change Log</a></li>
+
+        </ul>
+
+    </div>
+
+    <div class="purpose">
+        <a name="purpose"></a><br/>
+
+        <h2>Purpose</h2>
+
+        <p>Basically this was supposed to be a learning experience for me. A website in which I could display my resum&eacute;, ongoing and finished projects, and possibly a link to a <a href="https://github.com/">GitHub</a> repository or two that I feel I can be proud of (sadly, I do not seem to have any). Obviously, since its conception that has not been the case. Maybe it will come together at some point and be an awesome asset to later show potential employers, potential clients, and friends and family. Wouldn't that be nice...</p>
+    </div>
+
+    <div class="about">
+        <a name="about"></a><br/>
+
+        <h2>A little bit about me</h2>
+
+        <p>Everything is terrible.</p>
+    </div>
+
+    <div class="workout">
+        <a name="workout"></a><br/>
+
+        <h2>Keep me honest!</h2>
+        <h6>Powered by <a href="https://www.strava.com">Strava</a></h6>
+
+        <iframe height='454' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/6459374/latest-rides/497f5574346e8e80a57eee4420232d1eb47b0e54'></iframe>
+    </div>
+
+
+    <div class="expect">
+        <a name="expect"></a><br/>
+
+        <h2>Things you will [hopefully] see on this site</h2>
+        <ul>
+            <li>Random projects</li>
+            <li>Amateur 3D modeling most likely rendered in <a href="https://www.blender.org/">Blender</a></li>
+            <li>Cool stuff made with lot of awesome web languages, such as:
+                <ol>
+                    <strike>
+                    <li>HTML</li>
+                    <li>JavaScript</li>
+                    <li>CSS</li>
+                    <li>PHP</li>
+                    <li>XML</li>
+                    <li>and maybe some C# and .NET framework if I ever figure out what exactly that is</li>
+                    </strike>
+                    <li>probably going to scrap all of that and go with a RoR or Django website...</li>
+                </ol></li>
+        </ul>
+    </div>
+
+    <div class="media">
+        <a name="media"></a><br/>
+
+        <div>
+
+            <br/>
+            <div class="mediaDescription">
+                <h4>Here is a picture of me and my puppy, who just so happens to be the most adorable puppy in the world. Eat your heart out.</h4>
+            </div>
+            <img src="images/Cotton.jpg" class="cotton"/>
+        </div>
+
+        <!--<div>-->
+            <!--<br/>-->
+            <!--<div class="mediaDescription">-->
+                <!--<h4>And here is the video that represents the ghost that has been plaguing my every moment for the past decade or so.</h4>-->
+            <!--</div>-->
+            <!--<br/>-->
+            <!--<iframe align="middle" width="560" height="315" src="https://www.youtube.com/embed/NKo4BgDnlfQ" frameborder="0" allowfullscreen></iframe>-->
+        <!--</div>-->
+    </div>
+
+    <div class="life">
+        <a name="life"></a><br/>
+
+        <h2>Life updates</h2>
+        <ul>
+            <li>After three years at TAMU OA I have resigned and accepted a new part time position as a Junior Software Developer at FrogSlayer, LLC in Bryan, TX. I cannot wait to see what the future has in store and to see what this company and I can offer each other.</li>
+
+            <li>Yesterday, 11 Dec 2016, I ran the BCS Marathon with virtually no training. That was dumb. I am hurting all over right now. However, this has prompted me to add the Strava widget (and maybe some other physical activity info in the future) to my site.</li>
+            <li>The working out thing has not been going well.</li>
+            <li>I am not graduating until December 2017 *gag*</li>
+        </ul>
+
+    </div>
+
+    <br/>
+
+    <!--<div id="riddle">-->
+
+        <!--<h3>Riddle</h3>-->
+
+        <!--<p>Who makes it, has no need of it.<br/>Who buys it, has no use for it.<br/>who uses it can neither see nor feel it.<br/>What is it?</p>-->
+
+    <!--</div>-->
+
+    <!--<div id="ansResponse"></div>-->
+
+    <!--<div id="ridAns">-->
+        <!--<input id="userAnswer" type="text" placeholder="You Answer" />-->
+
+        <!--<button id="answer">Check your answer</button>-->
+        <!--<br/>-->
+    <!--</div>-->
+
+
+    <script type="text/javascript">
+
+        var ans = document.getElementById("userAnswer").value;
+
+        var correct = "coffin";
+        var correct1 = "a coffin";
+
+        document.getElementById("answer").onclick = function() {
+
+            ans = document.getElementById("userAnswer").value;
+
+            if (ans.toLowerCase() === correct || ans.toLowerCase() === correct1) {
+                document.getElementById("riddle").innerHTML = document.getElementById("riddle").innerHTML + "<p>\"" + ans + "\"</p>";
+                document.getElementById("ansResponse").innerHTML = "That's correct! Good job!";
+                document.getElementById("ridAns").style.display="none";
+            } else {
+                document.getElementById("ansResponse").innerHTML = "Sorry, that's not right. Keeping trying.";
+            }
+        }
+
+    </script>
+
+</div>
+
+<br/>
+
+<div class="blockquote"> “There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for.”  <span class="auth">-Milton Glaser</span> </div>
+
+<div id="copyright">
+    &copy; 2017 John Austin Moreno ALL RIGHTS RESERVED
+</div>
+
+</body>
+</html>
